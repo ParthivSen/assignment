@@ -123,3 +123,48 @@ import re
 #     print(res2.group(0))
 # else:
 #     print(False)
+
+
+# function:-
+# findall
+# finditer
+# sub
+
+# import re
+# st = """
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# the quick brown fox jumps over the lazy dog.
+# """
+
+# pattern = r"t\w+"
+# compile convert the string into a regex expression
+# regex = re.compile(r"t\w+")
+# res = re.findall(regex, st)
+# print(f"res: {res}")
+# print(len(res))
+
+# res = re.finditer(r"t\w+", st)
+# for i in res:
+#     s = i.start()
+#     e = i.end()
+#     print(f"The string found between:{i.start()} and {i.end()} : {st[s:e]}")
+
+# st = "the quick brown fox jumps over the lazy dog."
+# res = re.sub(r"t\w+", "The", st, count=1)
+# print(res)
+# res = re.sub(r"fox", "tiger", st, count=1)
+# print(f"res: {res}")
+
+# st = "the quick brown fox jumps over the lazy dog."
+# res = re.sub(r"fox", lambda word: word.upper(), st)
+# print(res)
